@@ -1,0 +1,22 @@
+
+texto #8476AA
+titulos #99efd0
+botones #f2994a
+bg #0f1145  #3a1e60
+
+
+fonts
+
+Inter 400/700
+Rubik 400/500
+Open-sans 400/600
+Montserrat 400/500
+Gilroy (semi-bold / bold)
+
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500&family=Open+Sans:wght@400;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
