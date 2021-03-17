@@ -1,0 +1,50 @@
+// Body background gradient colors
+$body-bg-color1: #0f1145;
+$body-bg-color2: #3a1e60;
+
+// Fonts
+$primary-font-family: "Inter", sans-serif;
+$second-font-family: "Open Sans", sans-serif;
+$third-font-family: "Rubik", sans-serif;
+$fourth-font-family: "Montserrat", sans-serif;
+
+// Text colors
+$title-color: #99efd0;
+$title-span-color: #f2994a;
+$text-color: #8476aa;
+
+// Button color
+$btn-bg-color: #f2994a;
+
+@mixin border($color: #f2994a) {
+  border: 2px solid $color;
+}
+
+// Flexbox mixins
+@mixin flexbox(
+  $direction: row,
+  $wrap: nowrap,
+  $justify: center,
+  $align: center
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Button mixins
+@mixin general-button($width, $pdy, $pdx) {
+  width: $width;
+  padding: $pdy $pdx;
+  color: #fff;
+  background-color: $btn-bg-color;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+}
+@mixin ghost-button {
+  color: $btn-bg-color;
+  border: 1px solid $btn-bg-color;
+}
