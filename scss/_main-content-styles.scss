@@ -218,4 +218,45 @@
       }
     }
   }
+
+  // Invest property section
+  .invest-property-section-wrapper {
+    width: 100%;
+    @include border;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/Mask-Group.svg);
+    background-repeat: no-repeat;
+    background-position: 40vw center;
+    background-size: contain;
+
+    .invest-property-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      @include border(magenta);
+      margin-bottom: 50px;
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+        margin-bottom: 35px;
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+      }
+      &#{__cta-btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a80;
+      }
+      &#{__img} {
+        width: 80%;
+      }
+    }
+  }
 }
