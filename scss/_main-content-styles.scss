@@ -69,34 +69,28 @@
         &:nth-child(1)::before {
           content: url(../assets/icons/Ecstatic.svg);
           margin-right: 20px;
-          border: 1px solid magenta;
         }
         &:nth-child(2)::before {
           content: url(../assets/icons/Airpods.svg);
           margin-right: 20px;
-          border: 1px solid magenta;
         }
         &:nth-child(3)::before {
           content: url(../assets/icons/Possible.svg);
           margin-right: 20px;
           width: 26px;
           height: 31px;
-          border: 1px solid magenta;
         }
         &:nth-child(4)::before {
           content: url(../assets/icons/Open-game.svg);
           margin-right: 20px;
-          border: 1px solid magenta;
         }
         &:nth-child(5)::before {
           content: url(../assets/icons/Endeavor.svg);
           margin-right: 20px;
-          border: 1px solid magenta;
         }
         &:nth-child(6)::before {
           content: url(../assets/icons/Comfort.svg);
           margin-right: 20px;
-          border: 1px solid magenta;
         }
       }
     }
@@ -107,7 +101,7 @@
     width: 100%;
     @include border;
     @include flexbox($wrap: wrap);
-    margin: 50px auto;
+    margin: 10px auto 40px auto;
     background-image: url(../assets/patterns/pattern-6.svg);
     background-repeat: no-repeat;
     background-position: -30vw center;
@@ -136,7 +130,6 @@
       }
       &#{__graphic} {
         width: 80%;
-        border: 1px solid magenta;
       }
     }
   }
@@ -191,6 +184,37 @@
             margin-bottom: 0;
           }
         }
+      }
+    }
+  }
+
+  //Create your next project - CTA section
+  .create-your-next-project-section-wrapper {
+    width: 100%;
+    @include border;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+
+    .create-your-next-project-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      @include border(magenta);
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+        margin-bottom: 35px;
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__cta-btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a80;
+      }
+      &#{__illustration} {
+        width: 120vw;
+        transform: translateY(-30px);
       }
     }
   }

@@ -16,7 +16,7 @@ $text-color: #8476aa;
 $btn-bg-color: #f2994a;
 
 @mixin border($color: #f2994a) {
-  border: 2px solid $color;
+  border: 1px solid $color;
 }
 
 // Flexbox mixins
@@ -41,7 +41,7 @@ $btn-bg-color: #f2994a;
   background-color: $btn-bg-color;
   outline: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 3px;
   text-transform: uppercase;
 }
