@@ -12,3 +12,40 @@
     }
   }
 }
+@media screen and (min-width: 500px) {
+  // Main header
+  .main-header {
+    &#{__illustration} {
+      transform: translate(55%, 65%);
+    }
+  }
+  // Sponsor section
+  .sponsor {
+    background-position-x: -10vw, 60vw;
+  }
+
+  // Main content
+  .main-content {
+    .your-choice-section {
+      background-position-x: -60vw, 70vw;
+      background-size: contain;
+      background-position-y: 0vh;
+    }
+  }
+  // Main footer
+  .main-footer-wrapper {
+    .main-footer {
+      .footer-top-section {
+        .footer-social-icons {
+          width: 120px;
+        }
+      }
+      .footer-navs-wrapper {
+        justify-content: space-between;
+        .footer-nav {
+          width: 35%;
+        }
+      }
+    }
+  }
+}
