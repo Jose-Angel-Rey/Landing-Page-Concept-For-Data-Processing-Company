@@ -1,0 +1,110 @@
+/* Main footer styles*/
+
+.main-footer-wrapper {
+  width: 100%;
+  @include border;
+  @include flexbox($wrap: wrap);
+  background-image: url(../assets/footer-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .main-footer {
+    width: 80%;
+    @include flexbox($wrap: wrap);
+    @include border(magenta);
+    margin-bottom: 50px;
+
+    // Top section
+    .footer-top-section {
+      width: 100%;
+      margin-bottom: 40px;
+      @include border(cyan);
+      @include flexbox($justify: space-between);
+
+      &#{__logo} {
+        color: $title-span-color;
+        letter-spacing: 1px;
+        font: {
+          size: 2rem;
+          family: $third-font-family;
+        }
+      }
+
+      .footer-social-icons {
+        width: 40%;
+        @include border(red);
+        @include flexbox($justify: space-between);
+
+        &#{__icon} {
+          background-color: $cta-bg-color;
+          border-radius: 50%;
+          padding: 7px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    // Navs
+    .footer-navs-wrapper {
+      width: 100%;
+      @include border;
+      @include flexbox($wrap: wrap);
+
+      .footer-nav {
+        width: 90%;
+        margin-bottom: 50px;
+        @include border(greenyellow);
+
+        ul {
+          list-style-type: none;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+
+        &#{__title} {
+          color: #fff;
+          margin-bottom: 15px;
+          font: {
+            size: 1.5rem;
+            family: $primary-font-family;
+          }
+        }
+
+        &#{__item} {
+          color: #fff;
+          text-decoration: none;
+          font: {
+            size: 1.5rem;
+            family: $primary-font-family;
+            weight: 400;
+          }
+        }
+      }
+    }
+  }
+  // Copy section
+  .footer-copy-section-wrapper {
+    width: 100%;
+    @include border(cyan);
+  }
+  .footer-copy-section {
+    width: 100%;
+    @include border(magenta);
+    margin-right: auto;
+    margin-left: auto;
+    @include flexbox($justify: space-between);
+
+    &#{__item} {
+        width: 30%;
+      color: $text-color-2;
+      text-decoration: none;
+      text-align: center;
+      font: {
+        size: 1.3rem;
+        family: $second-font-family;
+        weight: 400;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   width: 100%;
   @include border;
   @include flexbox($wrap: wrap);
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
   background-image: url(../assets/cta-illustration-2.svg);
   background-position: 40vw center;
   background-repeat: repeat-x;
@@ -26,7 +26,7 @@
       font: {
         size: 3rem;
         weight: 700;
-        family: $primary-font-family;
+        family: $third-font-family;
       }
     }
     &#{__description} {

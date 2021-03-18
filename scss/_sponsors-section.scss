@@ -2,7 +2,7 @@
 
 .sponsor{
     width: 100%;
-    margin: 40px auto;
+    margin: 80px auto 40px auto;
     @include border(magenta);
     @include flexbox($direction:column);
     background-image: url(../assets/patterns/pattern-1.svg), url(../assets/patterns/pattern-1.svg);
