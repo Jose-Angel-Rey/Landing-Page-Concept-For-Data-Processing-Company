@@ -140,4 +140,58 @@
       }
     }
   }
+
+  // 3 Simple ways to save a bunch of money section
+  .ways-to-save-money-wrapper {
+    width: 100%;
+    @include border;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/pattern-6.svg);
+    background-repeat: no-repeat;
+    background-position: -40vw center;
+
+    .ways-to-save-money-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      @include border(magenta);
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        width: 100%;
+      }
+      .ways-to-save-money-articles-wrapper {
+        @extend .your-choice-articles-wrapper;
+
+        .ways-to-save-money-article {
+          @include border(green);
+          margin-bottom: 35px;
+          @include flexbox($justify: flex-end, $wrap: wrap);
+
+          &#{__title} {
+            @extend .your-choice-section__title;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+            width: 100%;
+            display: inline-block;
+          }
+          &#{__description} {
+            @extend .your-choice-section__description;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
