@@ -49,3 +49,192 @@
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    padding: 5% 0;
+  }
+
+  // Main header
+  .main-header {
+    width: 80%;
+    justify-content: flex-start;
+    .top-section {
+      margin-bottom: 200px;
+      width: 100%;
+
+      // Top section nav
+      &#{-nav-wrapper} {
+        display: block;
+        width: 55%;
+        max-width: 340px;
+        justify-self: flex-start;
+        .top-section-nav {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+
+          &#{__link} {
+            text-decoration: none;
+            color: $text-color-2;
+            text-transform: uppercase;
+            font: {
+              family: $third-font-family;
+              size: 1.4rem;
+              weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .main-header-content {
+      max-width: 375px;
+      justify-content: flex-start;
+
+      &#{__title} {
+        text-align: left;
+        font-size: 3rem;
+        line-height: 35px;
+      }
+      &#{__description} {
+        text-align: left;
+      }
+      .cta-section {
+        width: 70%;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &#{__btn} {
+          width: 120px;
+        }
+      }
+    }
+    &#{__illustration} {
+      transform: translate(65%, 35%);
+    }
+  }
+
+  // Sponsors section
+  .sponsor {
+    padding: 10% 18%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-position-x: -5vw, 80vw;
+    background-position-y: center;
+  }
+
+  // Main content
+  .main-content {
+    .your-choice-section {
+      background-position-x: -20vw, 85vw;
+      background-position-y: center;
+      .your-choice-articles-wrapper {
+        justify-content: space-between;
+        .your-choice-article {
+          width: 45%;
+        }
+      }
+    }
+
+    .increase-your-traffic-section-wrapper {
+      .increase-your-traffic-section {
+        width: 45%;
+        margin-left: auto;
+        margin-right: 25px;
+        justify-content: flex-start;
+
+        &#{__title} {
+          text-align: left;
+          width: 90%;
+        }
+        &#{__description} {
+          text-align: left;
+          margin-bottom: 30px;
+          font-size: 1.4rem;
+        }
+
+        &#{__graphic} {
+          width: 40%;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .ways-to-save-money-wrapper {
+      .ways-to-save-money-section {
+        .ways-to-save-money-articles-wrapper {
+          display: flex;
+          justify-content: space-between;
+
+          .ways-to-save-money-article {
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+
+            &#{__description} {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+
+    .invest-property-section-wrapper {
+      background-position: 50vw center;
+      .invest-property-section {
+        width: 45%;
+        margin-left: auto;
+        margin-right: 25px;
+        justify-content: flex-start;
+
+        &#{__title} {
+          text-align: left;
+          width: 90%;
+        }
+        &#{__description} {
+          text-align: left;
+          margin-bottom: 30px;
+          font-size: 1.4rem;
+        }
+        &#{__img} {
+          width: 40%;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .finding-information-section-wrapper {
+      background-position: 70vw center;
+      .finding-information-section {
+        justify-content: space-between;
+        .finding-information-articles-wrapper {
+          width: 45%;
+          order: 1;
+
+          .finding-information-article {
+            &#{__description} {
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        &#{__img} {
+          order: 0;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  // CTA section
+  .cta-section-wrapper {
+    background-repeat: repeat-x;
+    background-size: contain;
+    .cta-section {
+      max-width: 800px;
+    }
+  }
+}
