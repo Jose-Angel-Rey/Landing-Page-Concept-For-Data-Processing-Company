@@ -1,12 +1,16 @@
 /* Sponsors section styles */
 
 .sponsor{
-    width: 80%;
+    width: 100%;
     margin: 40px auto;
     @include border(magenta);
     @include flexbox($direction:column);
+    background-image: url(../assets/patterns/pattern-1.svg), url(../assets/patterns/pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: -45vw, 70vw;
+    background-size: contain;
     &#{__logo}{
-        margin-bottom: 50px;
+        margin: 25px auto;
         width: 130px;
     }
 }

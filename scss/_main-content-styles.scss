@@ -8,12 +8,19 @@
   // Your choice section
   .your-choice-section {
     @include border(lightblue);
-    width: 80%;
+    width: 100%;
+    @include flexbox($wrap:wrap);
     font-size: 2rem;
     color: white;
+    margin: 75px auto;
+    background-image: url(../assets/patterns/pattern-1.svg), url(../assets/patterns/pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: -50vw, 70vw;
+    background-position-y: 0vh, 75vh;
 
     &#{__title} {
       color: $title-color;
+      width: 80%;
       text-align: center;
       margin-bottom: 20px;
       font: {
@@ -23,6 +30,7 @@
       }
     }
     &#{__description} {
+      width: 80%;
       color: $text-color;
       text-align: center;
       margin-bottom: 40px;
@@ -33,7 +41,7 @@
       }
     }
     .your-choice-articles-wrapper {
-      width: 100%;
+      width: 80%;
       @include border(magenta);
       @include flexbox($wrap: wrap);
 
@@ -47,13 +55,13 @@
           font-size: 1.6rem;
           text-align: left;
           margin-bottom: 10px;
-          width: 80%;
+          width: 79%;
           display: inline-block;
         }
         &#{__description} {
           @extend .your-choice-section__description;
           text-align: left;
-          width: 80%;
+          width: 79%;
           margin-bottom: 0;
           display: inline-block;
         }
@@ -90,6 +98,20 @@
           border: 1px solid magenta;
         }
       }
+    }
+  }
+
+  // Increase your business traffic section
+  .increase-your-traffic-section-wrapper{
+    width: 100%;
+    @include border;
+    @include flexbox($wrap:wrap);
+    margin: 50px auto;
+
+    .increase-your-traffic-section{
+      width: 80%;
+    @include border(magenta);
+
     }
   }
 }
