@@ -16,7 +16,7 @@ $text-color: #8476aa;
 $btn-bg-color: #f2994a;
 
 @mixin border($color: #f2994a) {
-  border: 1px solid $color;
+  border: 0px solid $color;
 }
 
 // Flexbox mixins
