@@ -9,11 +9,12 @@
   .your-choice-section {
     @include border(lightblue);
     width: 100%;
-    @include flexbox($wrap:wrap);
+    @include flexbox($wrap: wrap);
     font-size: 2rem;
     color: white;
     margin: 75px auto;
-    background-image: url(../assets/patterns/pattern-1.svg), url(../assets/patterns/pattern-1.svg);
+    background-image: url(../assets/patterns/pattern-1.svg),
+      url(../assets/patterns/pattern-1.svg);
     background-repeat: no-repeat;
     background-position-x: -50vw, 70vw;
     background-position-y: 0vh, 75vh;
@@ -102,16 +103,41 @@
   }
 
   // Increase your business traffic section
-  .increase-your-traffic-section-wrapper{
+  .increase-your-traffic-section-wrapper {
     width: 100%;
     @include border;
-    @include flexbox($wrap:wrap);
+    @include flexbox($wrap: wrap);
     margin: 50px auto;
+    background-image: url(../assets/patterns/pattern-6.svg);
+    background-repeat: no-repeat;
+    background-position: -30vw center;
 
-    .increase-your-traffic-section{
+    .increase-your-traffic-section {
       width: 80%;
-    @include border(magenta);
+      @include flexbox($wrap: wrap);
+      @include border(magenta);
+      margin-bottom: 75px;
 
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        width: 100%;
+      }
+      &#{__btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a80;
+      }
+      &#{__graphic} {
+        width: 80%;
+        border: 1px solid magenta;
+      }
     }
   }
 }
