@@ -1,0 +1,12 @@
+/* Sponsors section styles */
+
+.sponsor{
+    width: 80%;
+    margin: 40px auto;
+    @include border(magenta);
+    @include flexbox($direction:column);
+    &#{__logo}{
+        margin-bottom: 50px;
+        width: 130px;
+    }
+}
