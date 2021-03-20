@@ -57,6 +57,7 @@
   // Main header
   .main-header {
     width: 80%;
+    max-width: 700px;
     justify-content: flex-start;
     .top-section {
       margin-bottom: 200px;
@@ -68,6 +69,7 @@
         width: 55%;
         max-width: 340px;
         justify-self: flex-start;
+        margin: 0 auto 0 50px;
         .top-section-nav {
           list-style-type: none;
           display: flex;
@@ -117,20 +119,22 @@
   }
 
   // Sponsors section
-  .sponsor {
-    padding: 10% 18%;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  .sponsor-wrapper {
     background-position-x: -5vw, 80vw;
     background-position-y: center;
+    .sponsor {
+      padding: 10% 18%;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
   }
-
   // Main content
   .main-content {
     .your-choice-section {
       background-position-x: -20vw, 85vw;
       background-position-y: center;
       .your-choice-articles-wrapper {
+        max-width: 670px;
         justify-content: space-between;
         .your-choice-article {
           width: 45%;
@@ -141,6 +145,7 @@
     .increase-your-traffic-section-wrapper {
       .increase-your-traffic-section {
         width: 45%;
+        max-width: 370px;
         margin-left: auto;
         margin-right: 25px;
         justify-content: flex-start;
@@ -157,6 +162,7 @@
 
         &#{__graphic} {
           width: 40%;
+          max-width: 420px;
           margin-right: auto;
         }
       }
@@ -164,6 +170,7 @@
 
     .ways-to-save-money-wrapper {
       .ways-to-save-money-section {
+        max-width: 700px;
         .ways-to-save-money-articles-wrapper {
           display: flex;
           justify-content: space-between;
@@ -186,8 +193,8 @@
       background-position: 50vw center;
       .invest-property-section {
         width: 45%;
-        margin-left: auto;
-        margin-right: 25px;
+        max-width: 385px;
+        margin: 0 25px 0 auto;
         justify-content: flex-start;
 
         &#{__title} {
@@ -201,6 +208,7 @@
         }
         &#{__img} {
           width: 40%;
+          max-width: 400px;
           margin-right: auto;
         }
       }
@@ -209,6 +217,7 @@
     .finding-information-section-wrapper {
       background-position: 70vw center;
       .finding-information-section {
+        max-width: 700px;
         justify-content: space-between;
         .finding-information-articles-wrapper {
           width: 45%;
@@ -234,7 +243,26 @@
     background-repeat: repeat-x;
     background-size: contain;
     .cta-section {
-      max-width: 800px;
+      max-width: 900px;
+
+      .input-wrapper{
+        max-width: 420px;
+      }
+    }
+  }
+
+  // Main footer
+  .main-footer-wrapper{
+    .main-footer{
+      max-width: 750px;
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  // Main header
+  .main-header {
+    &#{__illustration} {
+      transform: translate(55%, 30%);
     }
   }
 }
