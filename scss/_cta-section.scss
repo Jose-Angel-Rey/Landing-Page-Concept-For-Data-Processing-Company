@@ -1,7 +1,6 @@
 /* CTA section */
 .cta-section-wrapper {
   width: 100%;
-  @include border;
   @include flexbox($wrap: wrap);
   margin: 50px auto 100px auto;
   background-image: url(../assets/cta-illustration-2.svg);
@@ -12,7 +11,6 @@
   .cta-section {
     width: 80%;
     @include flexbox($direction: column);
-    @include border(magenta);
     background-color: $cta-bg-color;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -41,7 +39,6 @@
       }
     }
     .input-wrapper {
-      @include border(cyan);
       width: 80%;
       @include flexbox($wrap: wrap);
 
@@ -52,6 +49,7 @@
         border: none;
         border-radius: 5px 0px 0px 5px;
         background-color: rgb(66, 69, 121);
+        cursor: text;
 
         &::placeholder {
           font-family: $third-font-family;
@@ -60,6 +58,14 @@
       .cta-section__input-submit {
         @include general-button($width: 30%, $pdy: 17px);
         border-radius: 0px 5px 5px 0px;
+        transition: background-color 0.5s;
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
       }
       .cta-section__advice {
         width: 100%;
