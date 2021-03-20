@@ -1,19 +1,17 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-:root{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-body{
-    background: $body-bg-gradient;
-    background-repeat: no-repeat;
-}
-.main-wrapper{
-    @include border(greenyellow);
-    @include flexbox(row,wrap);
-    padding: 10% 0;
-    overflow-x: hidden;
+.main-wrapper {
+  width: 100%;
+  background: $body-bg-gradient;
+  background-repeat: no-repeat;
+  @include flexbox(row, wrap);
+  padding: 10% 0;
+  overflow-x: hidden;
 }

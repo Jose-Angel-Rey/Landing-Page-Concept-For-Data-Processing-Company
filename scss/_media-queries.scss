@@ -79,10 +79,17 @@
             text-decoration: none;
             color: $text-color-2;
             text-transform: uppercase;
+            transition: color .5s;
             font: {
               family: $third-font-family;
               size: 1.4rem;
               weight: 400;
+            }
+            &:hover{
+              color: #fff;
+            }
+            &:active{
+              color: $btn-bg-color;
             }
           }
         }

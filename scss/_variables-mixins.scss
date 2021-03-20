@@ -5,7 +5,6 @@ $body-bg-gradient: linear-gradient(222deg, #3b1d60 1.22%, #040d3e 20%);
 $primary-font-family: "Inter", sans-serif;
 $second-font-family: "Open Sans", sans-serif;
 $third-font-family: "Rubik", sans-serif;
-$fourth-font-family: "Montserrat", sans-serif;
 
 // Text colors
 $title-color: #99efd0;
@@ -21,7 +20,7 @@ $cta-bg-color: rgb(30, 32, 71);
 $btn-bg-color: #f2994a;
 
 @mixin border($color: #f2994a) {
-  border: 0px solid $color;
+  border: 1px solid $color;
 }
 
 // Flexbox mixins

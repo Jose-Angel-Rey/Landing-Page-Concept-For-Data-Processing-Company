@@ -1,8 +1,9 @@
+/* Main header styles*/
+
 .main-header {
   width: 100%;
   position: relative;
   margin-bottom: 60px;
-  @include border(yellow);
   @include flexbox($wrap: wrap);
 
   // Top section
@@ -18,10 +19,29 @@
     .cta-section {
       &#{__btn} {
         @include general-button;
+        transition: background-color 0.5s;
 
         &:nth-child(1) {
           @include ghost-button;
           margin-right: 10px;
+          transition: border-color 0.5s;
+
+          &:hover {
+            border-color: darken($btn-bg-color, 20%);
+            cursor: pointer;
+
+            &:active {
+              border-color: lighten($btn-bg-color, 10%);
+            }
+          }
+        }
+        &:nth-child(2):hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+
+          &:active {
+            background-color: lighten($btn-bg-color, 10%);
+          }
         }
       }
     }
@@ -58,13 +78,36 @@
       width: 100%;
       margin-top: 60px;
       height: 130px;
-      @include flexbox($direction:column,$justify: space-evenly,$align:left);
+      @include flexbox(
+        $direction: column,
+        $justify: space-evenly,
+        $align: left
+      );
 
       &#{__btn} {
         @include general-button;
+        transition: background-color 0.5s;
 
+        &:nth-child(1):hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+
+          &:active {
+            background-color: lighten($btn-bg-color, 10%);
+          }
+        }
         &:nth-child(2) {
           @include ghost-button;
+          transition: border-color 0.5s;
+
+          &:hover {
+            border-color: darken($btn-bg-color, 20%);
+            cursor: pointer;
+
+            &:active {
+              border-color: lighten($btn-bg-color, 10%);
+            }
+          }
         }
       }
     }
