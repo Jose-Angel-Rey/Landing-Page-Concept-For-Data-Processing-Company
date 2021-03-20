@@ -2,12 +2,10 @@
 
 .main-content {
   width: 100%;
-  @include border(yellow);
   @include flexbox($wrap: wrap);
 
   // Your choice section
   .your-choice-section {
-    @include border(lightblue);
     width: 100%;
     @include flexbox($wrap: wrap);
     font-size: 2rem;
@@ -43,11 +41,9 @@
     }
     .your-choice-articles-wrapper {
       width: 80%;
-      @include border(magenta);
       @include flexbox($wrap: wrap);
 
       .your-choice-article {
-        @include border(green);
         margin-bottom: 35px;
         @include flexbox($justify: flex-end, $wrap: wrap);
 
@@ -99,7 +95,6 @@
   // Increase your business traffic section
   .increase-your-traffic-section-wrapper {
     width: 100%;
-    @include border;
     @include flexbox($wrap: wrap);
     margin: 10px auto 40px auto;
     background-image: url(../assets/patterns/pattern-6.svg);
@@ -109,7 +104,6 @@
     .increase-your-traffic-section {
       width: 80%;
       @include flexbox($wrap: wrap);
-      @include border(magenta);
       margin-bottom: 75px;
 
       &#{__title} {
@@ -126,7 +120,16 @@
       }
       &#{__btn} {
         @include general-button;
-        box-shadow: -5px 5px 15px #f2984a80;
+        box-shadow: -5px 5px 15px #f2984a42;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
       }
       &#{__graphic} {
         width: 80%;
@@ -137,7 +140,6 @@
   // 3 Simple ways to save a bunch of money section
   .ways-to-save-money-wrapper {
     width: 100%;
-    @include border;
     @include flexbox($wrap: wrap);
     margin: 50px auto;
     background-image: url(../assets/patterns/pattern-6.svg);
@@ -147,7 +149,6 @@
     .ways-to-save-money-section {
       width: 80%;
       @include flexbox($wrap: wrap);
-      @include border(magenta);
 
       &#{__title} {
         @extend .your-choice-section__title;
@@ -165,7 +166,6 @@
         @extend .your-choice-articles-wrapper;
 
         .ways-to-save-money-article {
-          @include border(green);
           margin-bottom: 35px;
           @include flexbox($justify: flex-end, $wrap: wrap);
 
@@ -191,14 +191,12 @@
   //Create your next project - CTA section
   .create-your-next-project-section-wrapper {
     width: 100%;
-    @include border;
     @include flexbox($wrap: wrap);
     margin: 50px auto;
 
     .create-your-next-project-section {
       width: 80%;
       @include flexbox($wrap: wrap);
-      @include border(magenta);
 
       &#{__title} {
         @extend .your-choice-section__title;
@@ -210,7 +208,17 @@
       }
       &#{__cta-btn} {
         @include general-button;
-        box-shadow: -5px 5px 15px #f2984a80;
+        box-shadow: -5px 5px 15px #f2984a49;
+        transition: background-color 0.5s;
+        z-index: 1000;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
       }
       &#{__illustration} {
         width: 120vw;
@@ -222,7 +230,6 @@
   // Invest property section
   .invest-property-section-wrapper {
     width: 100%;
-    @include border;
     @include flexbox($wrap: wrap);
     margin: 50px auto;
     background-image: url(../assets/patterns/Mask-Group.svg);
@@ -233,7 +240,6 @@
     .invest-property-section {
       width: 80%;
       @include flexbox($wrap: wrap);
-      @include border(magenta);
       margin-bottom: 50px;
 
       &#{__title} {
@@ -254,6 +260,15 @@
         @include general-button;
         box-shadow: -5px 5px 15px #f2984a80;
         margin-top: 30px;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
       }
       &#{__img} {
         width: 80%;
@@ -264,7 +279,6 @@
   // Finding information online section
   .finding-information-section-wrapper {
     width: 100%;
-    @include border;
     @include flexbox($wrap: wrap);
     margin: 50px auto;
     background-image: url(../assets/patterns/pattern-7.svg);
@@ -275,7 +289,6 @@
     .finding-information-section {
       width: 80%;
       @include flexbox($wrap: wrap);
-      @include border(magenta);
       margin-bottom: 50px;
 
       &#{__title} {
@@ -296,12 +309,10 @@
 
       .finding-information-articles-wrapper {
         width: 80%;
-        @include border(magenta);
         @include flexbox($wrap: wrap);
         margin-top: 30px;
 
         .finding-information-article {
-          @include border(green);
           @include flexbox($justify: flex-start, $wrap: wrap);
 
           &#{__title} {
