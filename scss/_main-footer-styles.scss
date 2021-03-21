@@ -2,7 +2,6 @@
 
 .main-footer-wrapper {
   width: 100%;
-  @include border;
   @include flexbox($wrap: wrap);
   background-image: url(../assets/footer-background.svg);
   background-repeat: no-repeat;
@@ -11,14 +10,12 @@
   .main-footer {
     width: 80%;
     @include flexbox($wrap: wrap);
-    @include border(magenta);
     margin-bottom: 50px;
 
     // Top section
     .footer-top-section {
       width: 100%;
       margin-bottom: 40px;
-      @include border(cyan);
       @include flexbox($justify: space-between);
 
       &#{__logo} {
@@ -32,7 +29,6 @@
 
       .footer-social-icons {
         width: 40%;
-        @include border(red);
         @include flexbox($justify: space-between);
 
         &#{__icon} {
@@ -41,19 +37,27 @@
           padding: 8px;
           width: 30px;
           height: 30px;
+          transition: all 0.5s;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken($cta-bg-color, 20%);
+            transform: scale(1.1);
+          }
+          &:active {
+            background-color: $btn-bg-color;
+          }
         }
       }
     }
     // Navs
     .footer-navs-wrapper {
       width: 100%;
-      @include border;
       @include flexbox($wrap: wrap);
 
       .footer-nav {
         width: 90%;
         margin-bottom: 50px;
-        @include border(greenyellow);
 
         ul {
           list-style-type: none;
@@ -74,10 +78,17 @@
         &#{__item} {
           color: #fff;
           text-decoration: none;
+          transition: color 0.5s;
           font: {
             size: 1.5rem;
             family: $primary-font-family;
             weight: 400;
+          }
+          &:hover {
+            color: $btn-bg-color;
+          }
+          &:active {
+            color: $title-color;
           }
         }
       }
@@ -86,25 +97,46 @@
   // Copy section
   .footer-copy-section-wrapper {
     width: 100%;
-    @include border(cyan);
   }
   .footer-copy-section {
     width: 100%;
-    @include border(magenta);
     margin-right: auto;
     margin-left: auto;
     @include flexbox($justify: space-between);
 
     &#{__item} {
-        width: 30%;
+      width: 30%;
       color: $text-color-2;
       text-decoration: none;
       text-align: center;
+      transition: color 0.5s;
       font: {
         size: 1.3rem;
         family: $second-font-family;
         weight: 400;
       }
+      &:hover {
+        color: #fff;
+      }
+      &:active {
+        color: $title-color;
+      }
     }
+  }
+}
+
+// Attribution styles
+.attribution{
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-family: $second-font-family;
+  font-weight: 400;
+
+  a{
+    color: darken($title-span-color, 20%);
+    text-decoration: none;
+    margin-left: 10px;
   }
 }
