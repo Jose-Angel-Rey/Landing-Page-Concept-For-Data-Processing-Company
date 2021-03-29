@@ -1,4 +1,4 @@
-# Landing-Page-Concept-For-Data-Processing-Company
+# Landing Page Concept For Data Processing Company
 
 ![Desktop desidn](/design/Desktop-design-preview.png)
 
