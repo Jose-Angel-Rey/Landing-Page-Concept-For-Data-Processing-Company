@@ -1,4 +1,4 @@
-# Landing Page Concept For Data Processing Company
+# Landing page concept for data processing company
 
 ## 🚀🚀 Project URL: https://jose-angel-rey-concept-for-data-processing-company.vercel.app/
 
