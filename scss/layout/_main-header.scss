@@ -17,7 +17,7 @@
     }
 
     &-nav-wrapper {
-      background: linear-gradient(purple, green);
+      background: linear-gradient(90deg, #040d3e, #3b1d60 , #040d3e);
       position: fixed;
       left: 0;
       top: 0;
@@ -27,6 +27,9 @@
       z-index: 100;
       transition: all 0.5s;
       transform: translateX(-110%);
+    }
+    .active {
+      transform: none;
     }
     &-nav {
       margin: auto;

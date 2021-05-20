@@ -4,6 +4,7 @@
   position: fixed;
   right: 0;
   top: 0;
+  transition: all .5s;
   transform: translate(-5rem, 5rem);
   padding: 0px;
   background-color: transparent;
@@ -11,6 +12,9 @@
   outline: none;
   cursor: pointer;
   z-index: 1000000;
+}
+.active span{
+    background-color: $title-color;
 }
 @media screen and (min-width: 768px) {
   .top-section__hamburger-btn {
