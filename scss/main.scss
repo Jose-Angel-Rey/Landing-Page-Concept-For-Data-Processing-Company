@@ -24,11 +24,9 @@
 @import "layout/main-content-invest-property-section";
 @import "layout/main-content-finding-information-online-section";
 
-@import "layout/main-footer";
-
 @import "layout/cta-section";
 
-
+@import "layout/main-footer";
 
 // ------------- Components ----------------
 // • Main header
@@ -46,6 +44,5 @@
 @import "components/attribution-footer";
 
 // Media queries
-@import "media-queries/media-queries-768px";
 @import "media-queries/media-queries-1100px";
 @import "media-queries/media-queries-1300px";

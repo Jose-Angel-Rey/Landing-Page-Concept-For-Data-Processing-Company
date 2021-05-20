@@ -7,6 +7,16 @@
   @include flexbox($wrap: wrap);
   margin-bottom: 50px;
 
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    justify-content: space-between;
+
+    &__img {
+      order: 0;
+      width: 50%;
+    }
+  }
+
   &-wrapper {
     width: 100%;
     @include flexbox($wrap: wrap);
@@ -15,6 +25,10 @@
     background-repeat: no-repeat;
     background-position: 40vw center;
     background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      background-position: 70vw center;
+    }
   }
 
   &__title {
@@ -44,6 +58,17 @@
   @include flexbox($wrap: wrap);
   margin-top: 30px;
   width: 80%;
+
+  @media screen and (min-width: 768px) {
+    width: 45%;
+    order: 1;
+
+    .finding-information-article {
+      &__description {
+        font-size: 1.4rem;
+      }
+    }
+  }
 
   .finding-information-article {
     @include flexbox($justify: flex-start, $wrap: wrap);

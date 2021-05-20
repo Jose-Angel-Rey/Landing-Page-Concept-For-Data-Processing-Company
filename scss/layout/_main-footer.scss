@@ -3,10 +3,14 @@
 // ***********************************
 
 .main-footer {
-  width: 80%;
   @include flexbox($wrap: wrap);
   margin-bottom: 50px;
+  width: 80%;
   
+  @media screen and (min-width: 768px) {
+    max-width: 750px;
+  }
+
   &-wrapper {
     width: 100%;
     @include flexbox($wrap: wrap);

@@ -15,6 +15,10 @@
     background-repeat: no-repeat;
     background-position: 40vw center;
     background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      background-position: 50vw center;
+    }
   }
 
   &__title {
@@ -30,6 +34,27 @@
     text-align: center;
     width: 100%;
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 45%;
+    max-width: 385px;
+    margin: 0 25px 0 auto;
+    justify-content: flex-start;
+
+    &__title {
+      text-align: left;
+      width: 90%;
+    }
+    &__description {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 1.4rem;
+    }
+    &__img {
+      width: 40%;
+      max-width: 400px;
+      margin-right: auto;
+    }
   }
   &__btn {
     @include general-button;
