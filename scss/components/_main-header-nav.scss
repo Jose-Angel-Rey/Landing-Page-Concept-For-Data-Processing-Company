@@ -6,6 +6,12 @@
   margin: auto;
   list-style-type: none;
 
+  @media screen and (min-width: 768px) {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &-wrapper {
     background: #040d3e;
     position: fixed;
@@ -22,6 +28,17 @@
     @media screen and (min-width: 850px) {
       margin: 0 auto 0 50px;
     }
+    @media screen and (min-width: 768px) {
+      background: transparent;
+      position: static;
+      transform: none;
+      display: block;
+      width: 55%;
+      height: fit-content;
+      max-width: 340px;
+      justify-self: flex-start;
+      margin: 0 auto 0 20px;
+    }
   }
 
   &__link {
@@ -37,6 +54,23 @@
     }
     &:active {
       color: $btn-bg-color;
+    }
+    @media screen and (min-width: 768px) {
+      text-decoration: none;
+      color: $text-color-2;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      transition: color 0.5s;
+      font: {
+        size: 1.4rem;
+        weight: 400;
+      }
+      &:hover {
+        color: #fff;
+      }
+      &:active {
+        color: $btn-bg-color;
+      }
     }
   }
 }

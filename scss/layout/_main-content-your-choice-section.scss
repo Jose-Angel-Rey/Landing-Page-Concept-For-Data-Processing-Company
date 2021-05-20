@@ -20,6 +20,10 @@
     background-position-y: 0vh;
   }
 
+  @media screen and (min-width: 768px) {
+    background-position-x: -20vw, 85vw;
+    background-position-y: center;
+  }
   &__title {
     color: $title-color;
     width: 80%;
@@ -43,12 +47,21 @@
     }
   }
   .your-choice-articles-wrapper {
-    width: 80%;
     @include flexbox($wrap: wrap);
+    width: 80%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 670px;
+      justify-content: space-between;
+    }
 
     .your-choice-article {
-      margin-bottom: 35px;
       @include flexbox($justify: flex-end, $wrap: wrap);
+      margin-bottom: 35px;
+
+      @media screen and (min-width: 768px) {
+        width: 45%;
+      }
 
       &__title {
         @extend .your-choice-section__title;

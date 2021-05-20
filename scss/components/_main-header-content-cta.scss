@@ -1,7 +1,6 @@
 // *************************************************
-//       MAIN HEADER CONTENT - CTA 
+//       MAIN HEADER CONTENT - CTA
 // *************************************************
-
 
 .cta-section {
   @include flexbox($direction: column, $justify: space-evenly, $align: left);
@@ -33,6 +32,17 @@
       &:active {
         border-color: lighten($btn-bg-color, 10%);
       }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__btn {
+      width: 120px;
     }
   }
 }

@@ -12,6 +12,12 @@
     background-position-x: -10vw, 60vw;
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 10% 18%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
   &-wrapper {
     width: 100%;
     margin: 80px auto 40px auto;
@@ -21,6 +27,11 @@
     background-repeat: no-repeat;
     background-position-x: -45vw, 70vw;
     background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      background-position-x: -5vw, 80vw;
+      background-position-y: center;
+    }
   }
   &__logo {
     margin: 25px auto;

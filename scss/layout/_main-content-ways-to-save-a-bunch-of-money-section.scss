@@ -4,8 +4,8 @@
 
 // Wrapper
 .ways-to-save-money-wrapper {
-  width: 100%;
   @include flexbox($wrap: wrap);
+  width: 100%;
   margin: 50px auto;
   background-image: url(../assets/patterns/pattern-6.svg);
   background-repeat: no-repeat;
@@ -14,8 +14,12 @@
 
 // Section
 .ways-to-save-money-section {
-  width: 80%;
   @include flexbox($wrap: wrap);
+  width: 80%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
 
   &__title {
     @extend .your-choice-section__title;
@@ -35,10 +39,25 @@
 .ways-to-save-money-articles-wrapper {
   @extend .your-choice-articles-wrapper;
 
-  .ways-to-save-money-article {
-    margin-bottom: 35px;
-    @include flexbox($justify: flex-end, $wrap: wrap);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .ways-to-save-money-article {
+    @include flexbox($justify: flex-end, $wrap: wrap);
+    margin-bottom: 35px;
+
+    @media screen and (min-width: 768px) {
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+
+      &__description {
+        font-size: 1.4rem;
+      }
+    }
     &__title {
       @extend .your-choice-section__title;
       font-size: 2rem;
