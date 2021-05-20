@@ -1,0 +1,11 @@
+@media screen and (min-width: 850px) {
+  // Main header
+  .main-header {
+    .top-section-nav-wrapper {
+      margin: 0 auto 0 50px;
+    }
+    &#{__illustration} {
+      transform: translate(55%, 30%);
+    }
+  }
+}

@@ -1,0 +1,351 @@
+/* Main content styles */
+
+.main-content {
+  width: 100%;
+  @include flexbox($wrap: wrap);
+
+  // Your choice section
+  .your-choice-section {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    font-size: 2rem;
+    color: white;
+    margin: 75px auto;
+    background-image: url(../assets/patterns/pattern-1.svg),
+      url(../assets/patterns/pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: -50vw, 70vw;
+    background-position-y: 0vh, 75vh;
+
+    &#{__title} {
+      color: $title-color;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 20px;
+      font: {
+        size: 3rem;
+        weight: 700;
+        family: $primary-font-family;
+      }
+    }
+    &#{__description} {
+      width: 80%;
+      color: $text-color;
+      text-align: center;
+      margin-bottom: 40px;
+      font: {
+        size: 1.5rem;
+        family: $second-font-family;
+        weight: 400;
+      }
+    }
+    .your-choice-articles-wrapper {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+
+      .your-choice-article {
+        margin-bottom: 35px;
+        @include flexbox($justify: flex-end, $wrap: wrap);
+
+        &#{__title} {
+          @extend .your-choice-section__title;
+          font-size: 1.6rem;
+          text-align: left;
+          margin-bottom: 10px;
+          width: 79%;
+          display: inline-block;
+        }
+        &#{__description} {
+          @extend .your-choice-section__description;
+          text-align: left;
+          width: 79%;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        &:nth-child(1)::before {
+          content: url(../assets/icons/Ecstatic.svg);
+          margin-right: 20px;
+        }
+        &:nth-child(2)::before {
+          content: url(../assets/icons/Airpods.svg);
+          margin-right: 20px;
+        }
+        &:nth-child(3)::before {
+          content: url(../assets/icons/Possible.svg);
+          margin-right: 20px;
+          width: 26px;
+          height: 31px;
+        }
+        &:nth-child(4)::before {
+          content: url(../assets/icons/Open-game.svg);
+          margin-right: 20px;
+        }
+        &:nth-child(5)::before {
+          content: url(../assets/icons/Endeavor.svg);
+          margin-right: 20px;
+        }
+        &:nth-child(6)::before {
+          content: url(../assets/icons/Comfort.svg);
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  // Increase your business traffic section
+  .increase-your-traffic-section-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 10px auto 40px auto;
+    background-image: url(../assets/patterns/pattern-6.svg);
+    background-repeat: no-repeat;
+    background-position: -30vw center;
+
+    .increase-your-traffic-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      margin-bottom: 75px;
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        width: 100%;
+      }
+      &#{__btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a42;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
+      }
+      &#{__graphic} {
+        width: 80%;
+      }
+    }
+  }
+
+  // 3 Simple ways to save a bunch of money section
+  .ways-to-save-money-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/pattern-6.svg);
+    background-repeat: no-repeat;
+    background-position: -40vw center;
+
+    .ways-to-save-money-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        width: 100%;
+      }
+      .ways-to-save-money-articles-wrapper {
+        @extend .your-choice-articles-wrapper;
+
+        .ways-to-save-money-article {
+          margin-bottom: 35px;
+          @include flexbox($justify: flex-end, $wrap: wrap);
+
+          &#{__title} {
+            @extend .your-choice-section__title;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+            width: 100%;
+            display: inline-block;
+          }
+          &#{__description} {
+            @extend .your-choice-section__description;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  //Create your next project - CTA section
+  .create-your-next-project-section-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+
+    .create-your-next-project-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+        margin-bottom: 35px;
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__cta-btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a49;
+        transition: background-color 0.5s;
+        z-index: 1000;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
+      }
+      &#{__illustration} {
+        width: 120vw;
+        transform: translateY(-30px);
+      }
+    }
+  }
+
+  // Invest property section
+  .invest-property-section-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/Mask-Group.svg);
+    background-repeat: no-repeat;
+    background-position: 40vw center;
+    background-size: contain;
+
+    .invest-property-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      margin-bottom: 50px;
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+        margin-bottom: 35px;
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+      }
+      &#{__btn} {
+        @include general-button;
+        box-shadow: -5px 5px 15px #f2984a80;
+        margin-top: 30px;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: darken($btn-bg-color, 20%);
+          cursor: pointer;
+        }
+        &:active {
+          background-color: lighten($btn-bg-color, 10%);
+        }
+      }
+      &#{__img} {
+        width: 80%;
+      }
+    }
+  }
+
+  // Finding information online section
+  .finding-information-section-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/pattern-7.svg);
+    background-repeat: no-repeat;
+    background-position: 40vw center;
+    background-size: contain;
+
+    .finding-information-section {
+      width: 80%;
+      @include flexbox($wrap: wrap);
+      margin-bottom: 50px;
+
+      &#{__title} {
+        @extend .your-choice-section__title;
+        width: 100%;
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+        span {
+          color: $title-span-color;
+        }
+      }
+      &#{__description} {
+        @extend .your-choice-section__description;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+      }
+
+      .finding-information-articles-wrapper {
+        width: 80%;
+        @include flexbox($wrap: wrap);
+        margin-top: 30px;
+
+        .finding-information-article {
+          @include flexbox($justify: flex-start, $wrap: wrap);
+
+          &#{__title} {
+            @extend .your-choice-section__title;
+            font-size: 1.6rem;
+            text-align: left;
+            margin-bottom: 10px;
+            width: 100%;
+          }
+          &#{__description} {
+            @extend .your-choice-section__description;
+            text-align: left;
+            margin-bottom: 0;
+            width: 100%;
+          }
+          &:nth-child(1) {
+            margin-bottom: 30px;
+
+            &::before {
+              content: url(../assets/icons/Swiss-knife.svg);
+              margin-bottom: 10px;
+            }
+          }
+          &:nth-child(2)::before {
+            content: url(../assets/icons/Possible.svg);
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &#{__img} {
+        margin-top: 50px;
+        width: 80%;
+      }
+    }
+  }
+}

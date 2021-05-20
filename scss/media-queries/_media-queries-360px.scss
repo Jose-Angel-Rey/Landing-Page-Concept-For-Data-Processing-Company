@@ -1,0 +1,7 @@
+@media screen and (min-width: 360px) {
+  .main-header {
+    &#{__illustration} {
+      transform: translate(68%, 65%);
+    }
+  }
+}
