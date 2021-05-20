@@ -7,9 +7,18 @@
   margin-bottom: 50px;
   width: 80%;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 200px;
+    width: 100%;
+  }
+
   // Logo
   &__logo {
     width: 5rem;
+    
+    @media screen and (min-width: 768px) {
+      width: 4rem;
+    }
   }
 
   // CTA buttons

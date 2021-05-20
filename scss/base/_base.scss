@@ -8,10 +8,14 @@
   scroll-behavior: smooth;
 }
 .main-wrapper {
-  width: 100%;
+  @include flexbox(row, wrap);
   background: $body-bg-gradient;
   background-repeat: no-repeat;
-  @include flexbox(row, wrap);
   padding: 10% 0;
   overflow-x: hidden;
+  width: 100%;
+  
+  @media screen and (min-width: 768px) {
+    padding: 5% 0;
+  }
 }
