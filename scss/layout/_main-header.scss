@@ -1,4 +1,6 @@
-/* Main header styles*/
+// **********************************
+//         MAIN HEADER
+// **********************************
 
 .main-header {
   width: 100%;
@@ -6,55 +8,14 @@
   margin-bottom: 60px;
   @include flexbox($wrap: wrap);
 
-  // Top section
-  .top-section {
-    @include flexbox($justify: space-between);
-    margin-bottom: 50px;
-    width: 80%;
-
-    &__logo {
-      width: 5rem;
-    }
-
-    .cta-section {
-      display: none;
-      &__btn {
-        @include general-button;
-        transition: background-color 0.5s;
-
-        &:nth-child(1) {
-          @include ghost-button;
-          margin-right: 10px;
-          transition: border-color 0.5s;
-
-          &:hover {
-            border-color: darken($btn-bg-color, 20%);
-            cursor: pointer;
-
-            &:active {
-              border-color: lighten($btn-bg-color, 10%);
-            }
-          }
-        }
-        &:nth-child(2):hover {
-          background-color: darken($btn-bg-color, 20%);
-          cursor: pointer;
-
-          &:active {
-            background-color: lighten($btn-bg-color, 10%);
-          }
-        }
-      }
-    }
-  }
-
-  // Main header content
-  .main-header-content {
+  // Content
+  &-content {
     width: 80%;
     max-width: 340px;
     @include flexbox($wrap: wrap);
 
-    &#{__title} {
+    // Content - title
+    &__title {
       color: $title-color;
       text-align: center;
       line-height: 30px;
@@ -65,7 +26,8 @@
         weight: 700;
       }
     }
-    &#{__description} {
+    // Content - description
+    &__description {
       color: $text-color;
       line-height: 22px;
       text-align: center;
@@ -75,6 +37,7 @@
         family: $second-font-family;
       }
     }
+    // CTA section
     .cta-section {
       @include flexbox(
         $direction: column,
@@ -85,19 +48,17 @@
       height: 130px;
       width: 100%;
 
-      @media screen and (min-width: 425px) {
-        display: block;
-        margin-right: 7rem;
-      }
+
 
       &__btn {
         @include general-button;
         transition: background-color 0.5s;
 
-        &:nth-child(1):hover {
-          background-color: darken($btn-bg-color, 20%);
-          cursor: pointer;
-
+        &:nth-child(1) {
+          &:hover {
+            background-color: darken($btn-bg-color, 20%);
+            cursor: pointer;
+          }
           &:active {
             background-color: lighten($btn-bg-color, 10%);
           }
@@ -109,15 +70,12 @@
           &:hover {
             border-color: darken($btn-bg-color, 20%);
             cursor: pointer;
-
-            &:active {
-              border-color: lighten($btn-bg-color, 10%);
-            }
+          }
+          &:active {
+            border-color: lighten($btn-bg-color, 10%);
           }
         }
       }
     }
   }
-
-  
 }
