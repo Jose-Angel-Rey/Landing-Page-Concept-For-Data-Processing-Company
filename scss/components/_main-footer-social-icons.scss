@@ -3,8 +3,12 @@
 // ***********************************
 
 .footer-social-icons {
-  width: 40%;
   @include flexbox($justify: space-between);
+  width: 40%;
+
+  @media screen and (min-width: 500px) {
+    width: 120px;
+  }
 
   &__icon {
     background-color: $cta-bg-color;

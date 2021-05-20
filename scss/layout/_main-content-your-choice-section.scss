@@ -14,6 +14,12 @@
   background-position-x: -50vw, 70vw;
   background-position-y: 0vh, 75vh;
 
+  @media screen and (min-width: 500px) {
+    background-position-x: -60vw, 70vw;
+    background-size: contain;
+    background-position-y: 0vh;
+  }
+
   &__title {
     color: $title-color;
     width: 80%;
