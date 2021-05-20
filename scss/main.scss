@@ -4,25 +4,28 @@
 
 @charset "utf-8";
 
-// Utilities
+// -------------- Utilities  ----------------
 @import "utilities/variables";
 @import "utilities/mixins";
 
-// Base
+// ---------------- Base ----------------
 @import "base/base";
 
-// Layout
+// --------------- Layout  -----------------
 @import "layout/main-header";
 @import "layout/main-content";
 @import "layout/main-footer";
 @import "layout/cta-section";
 @import "layout/sponsors-section";
 
-// Components
+// ------------- Components ----------------
+// • Main header
 @import "components/main-header-top-section";
 @import "components/main-header-nav";
 @import "components/main-header-illustration";
 @import "components/hamburger-btn";
+
+// • Main footer
 @import "components/main-footer-top-section";
 @import "components/main-footer-nav";
 @import "components/main-footer-social-icons";
