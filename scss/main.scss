@@ -1,13 +1,31 @@
-// Variables & Mixins
-@import "variables-mixins";
+// *******************************
+//          MAIN.SCSS
+// *******************************
 
-// Page styles
-@import "base-styles";
-@import "main-header-styles";
-@import "sponsors-section";
-@import "main-content-styles";
-@import "cta-section";
-@import "main-footer-styles";
+@charset "utf-8";
 
-// Media queries styles
-@import "media-queries";
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// Base
+@import "base/base";
+
+// Layout
+@import "layout/main-header";
+@import "layout/main-content";
+@import "layout/main-footer";
+@import "layout/cta-section";
+@import "layout/sponsors-section";
+
+// Components
+@import "components/hamburger-btn";
+
+// Media queries
+@import "media-queries/media-queries-360px";
+@import "media-queries/media-queries-425px";
+@import "media-queries/media-queries-500px";
+@import "media-queries/media-queries-768px";
+@import "media-queries/media-queries-850px";
+@import "media-queries/media-queries-1100px";
+@import "media-queries/media-queries-1300px";
