@@ -13,13 +13,24 @@
 
 // --------------- Layout  -----------------
 @import "layout/main-header";
-@import "layout/main-content";
-@import "layout/main-footer";
-@import "layout/cta-section";
+
 @import "layout/sponsors-section";
 
-// ------------- Components ----------------
+@import "layout/main-content";
+@import "layout/main-content-your-choice-section";
+@import "layout/main-content-increase-your-traffic-section";
+@import "layout/main-content-ways-to-save-a-bunch-of-money-section";
+@import "layout/main-content-create-your-next-project-section";
+@import "layout/main-content-invest-property-section";
+@import "layout/main-content-finding-information-online-section";
 
+@import "layout/main-footer";
+
+@import "layout/cta-section";
+
+
+
+// ------------- Components ----------------
 // • Main header
 @import "components/hamburger-btn";
 @import "components/main-header-top-section";
