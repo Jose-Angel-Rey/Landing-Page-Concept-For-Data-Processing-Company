@@ -1,0 +1,45 @@
+// *************************************
+//      MAIN FOOTER - NAVS
+// ************************************
+.footer-navs-wrapper {
+  width: 100%;
+  @include flexbox($wrap: wrap);
+
+  .footer-nav {
+    width: 90%;
+    margin-bottom: 50px;
+
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      color: #fff;
+      margin-bottom: 15px;
+      font: {
+        size: 1.5rem;
+        family: $primary-font-family;
+      }
+    }
+
+    &__item {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.5s;
+      font: {
+        size: 1.5rem;
+        family: $primary-font-family;
+        weight: 400;
+      }
+      &:hover {
+        color: $btn-bg-color;
+      }
+      &:active {
+        color: $title-color;
+      }
+    }
+  }
+}
