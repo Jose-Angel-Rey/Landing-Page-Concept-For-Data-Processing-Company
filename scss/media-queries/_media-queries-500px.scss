@@ -1,15 +1,4 @@
 @media screen and (min-width: 500px) {
-  // Main header
-  .main-header {
-    &#{__illustration} {
-      transform: translate(55%, 65%);
-    }
-  }
-  // Sponsor section
-  .sponsor {
-    background-position-x: -10vw, 60vw;
-  }
-
   // Main content
   .main-content {
     .your-choice-section {
