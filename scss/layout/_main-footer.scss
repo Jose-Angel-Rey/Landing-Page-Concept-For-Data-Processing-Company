@@ -1,31 +1,17 @@
-/* Main footer styles*/
+// ***********************************
+//         MAIN FOOTER
+// ***********************************
 
-.main-footer-wrapper {
-  width: 100%;
+.main-footer {
+  width: 80%;
   @include flexbox($wrap: wrap);
-  background-image: url(../assets/footer-background.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  .main-footer {
-    width: 80%;
+  margin-bottom: 50px;
+  
+  &-wrapper {
+    width: 100%;
     @include flexbox($wrap: wrap);
-    margin-bottom: 50px;
-
-    // Top section
-    .footer-top-section {
-      width: 100%;
-      margin-bottom: 40px;
-      @include flexbox($justify: space-between);
-
-      &__logo {
-        color: $title-span-color;
-        letter-spacing: 1px;
-        font: {
-          size: 2rem;
-          family: $third-font-family;
-        }
-      }
-    }
+    background-image: url(../assets/footer-background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
