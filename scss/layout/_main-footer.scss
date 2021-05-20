@@ -18,7 +18,7 @@
       margin-bottom: 40px;
       @include flexbox($justify: space-between);
 
-      &#{__logo} {
+      &__logo {
         color: $title-span-color;
         letter-spacing: 1px;
         font: {
@@ -26,125 +26,6 @@
           family: $third-font-family;
         }
       }
-
-      .footer-social-icons {
-        width: 40%;
-        @include flexbox($justify: space-between);
-
-        &#{__icon} {
-          background-color: $cta-bg-color;
-          border-radius: 50%;
-          padding: 8px;
-          width: 30px;
-          height: 30px;
-          transition: all 0.5s;
-          cursor: pointer;
-
-          &:hover {
-            background-color: darken($cta-bg-color, 20%);
-            transform: scale(1.1);
-          }
-          &:active {
-            background-color: $btn-bg-color;
-          }
-        }
-      }
-    }
-    // Navs
-    .footer-navs-wrapper {
-      width: 100%;
-      @include flexbox($wrap: wrap);
-
-      .footer-nav {
-        width: 90%;
-        margin-bottom: 50px;
-
-        ul {
-          list-style-type: none;
-        }
-        li {
-          margin-bottom: 10px;
-        }
-
-        &#{__title} {
-          color: #fff;
-          margin-bottom: 15px;
-          font: {
-            size: 1.5rem;
-            family: $primary-font-family;
-          }
-        }
-
-        &#{__item} {
-          color: #fff;
-          text-decoration: none;
-          transition: color 0.5s;
-          font: {
-            size: 1.5rem;
-            family: $primary-font-family;
-            weight: 400;
-          }
-          &:hover {
-            color: $btn-bg-color;
-          }
-          &:active {
-            color: $title-color;
-          }
-        }
-      }
-    }
-  }
-  // Copy section
-  .footer-copy-section-wrapper {
-    width: 100%;
-  }
-  .footer-copy-section {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    @include flexbox($justify: space-between);
-
-    &#{__item} {
-      width: 30%;
-      color: $text-color-2;
-      text-decoration: none;
-      text-align: center;
-      transition: color 0.5s;
-      font: {
-        size: 1.3rem;
-        family: $second-font-family;
-        weight: 400;
-      }
-      &:hover {
-        color: #fff;
-      }
-      &:active {
-        color: $title-color;
-      }
-    }
-  }
-}
-
-// Attribution styles
-.attribution{
-  width: 100%;
-  background-color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  font-family: $second-font-family;
-  font-weight: 400;
-
-  a{
-    color: darken($title-span-color, 30%);
-    text-decoration: none;
-    margin-left: 10px;
-    transition: color .5s;
-
-    &:hover{
-    color: darken($title-span-color, 15%);
-    }
-    &:active{
-    color: darken($title-color, 40%);
     }
   }
 }
