@@ -16,41 +16,6 @@
       width: 5rem;
     }
 
-    &-nav-wrapper {
-      background: #040d3e;
-      position: fixed;
-      left: 0;
-      top: 0;
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      z-index: 100;
-      transition: all 0.5s;
-      transform: translateX(-110%);
-    }
-    .open {
-      transform: none;
-    }
-    &-nav {
-      margin: auto;
-      list-style-type: none;
-
-      &__link {
-        font: {
-          size: 2rem;
-          family: $third-font-family;
-        }
-        display: block;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        margin-bottom: 2rem;
-        &:active {
-          color: $btn-bg-color;
-        }
-      }
-    }
-
     .cta-section {
       display: none;
       &__btn {
@@ -154,20 +119,5 @@
     }
   }
 
-  &__illustration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform: translate(75%, 65%);
-    
-    @media screen and (min-width: 360px) {
-      transform: translate(68%, 65%);
-    }
-    @media screen and (min-width: 425px) {
-      transform: translate(60%, 65%);
-    }
-    @media screen and (min-width: 500px) {
-      transform: translate(55%, 65%);
-    }
-  }
+  
 }

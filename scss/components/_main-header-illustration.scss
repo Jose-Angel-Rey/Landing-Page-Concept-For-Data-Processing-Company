@@ -1,0 +1,20 @@
+// ***********************************
+//       MAIN HEADER ILLUSTRATION
+// ***********************************
+
+.main-header__illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(75%, 65%);
+
+  @media screen and (min-width: 360px) {
+    transform: translate(68%, 65%);
+  }
+  @media screen and (min-width: 425px) {
+    transform: translate(60%, 65%);
+  }
+  @media screen and (min-width: 500px) {
+    transform: translate(55%, 65%);
+  }
+}

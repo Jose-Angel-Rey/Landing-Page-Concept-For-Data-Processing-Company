@@ -1,0 +1,40 @@
+// ************************************
+//          MAIN HEADER NAV
+// ************************************
+
+.top-section-nav {
+  &-wrapper {
+    background: #040d3e;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    transition: all 0.5s;
+    transform: translateX(-110%);
+  }
+  &-nav {
+    margin: auto;
+    list-style-type: none;
+
+    &__link {
+      font: {
+        size: 2rem;
+        family: $third-font-family;
+      }
+      display: block;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      &:active {
+        color: $btn-bg-color;
+      }
+    }
+  }
+}
+.open {
+  transform: none;
+}
