@@ -1,15 +1,16 @@
 .top-section__hamburger-btn{
-    width:64px;
+    width:50px;
     height:64px;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translate(-5rem, 4rem);
     padding: 0px;
     background-color:transparent;
     border-style:none;
     outline: none;
     cursor: pointer;
+    z-index: 1000000;
 }
 .top-section__hamburger-btn span{
     width:100%;
@@ -25,11 +26,11 @@
     left:0px;
 }
 .top-section__hamburger-btn span:nth-child(2){
-    top:20px;
+    top: 15px;
     right:0px;
 }
 .top-section__hamburger-btn span:nth-child(3){
-    top:40px;
+    top:30px;
     left:0px;
 }
 .top-section__hamburger-btn.open span:nth-child(2){
