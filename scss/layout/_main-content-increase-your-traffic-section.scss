@@ -1,0 +1,47 @@
+// **************************************************
+//    MAIN CONTENT - INCREASE YOUR TRAFFIC SECTION
+// **************************************************
+
+.increase-your-traffic-section {
+  width: 80%;
+  @include flexbox($wrap: wrap);
+  margin-bottom: 75px;
+
+  &-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 10px auto 40px auto;
+    background-image: url(../assets/patterns/pattern-6.svg);
+    background-repeat: no-repeat;
+    background-position: -30vw center;
+  }
+
+  &__title {
+    @extend .your-choice-section__title;
+    width: 100%;
+
+    span {
+      color: $title-span-color;
+    }
+  }
+  &__description {
+    @extend .your-choice-section__description;
+    width: 100%;
+  }
+  &__btn {
+    @include general-button;
+    box-shadow: -5px 5px 15px #f2984a42;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: darken($btn-bg-color, 20%);
+      cursor: pointer;
+    }
+    &:active {
+      background-color: lighten($btn-bg-color, 10%);
+    }
+  }
+  &__graphic {
+    width: 80%;
+  }
+}

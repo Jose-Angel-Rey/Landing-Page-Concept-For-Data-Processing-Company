@@ -1,0 +1,90 @@
+// **********************************************
+//      MAIN CONTENT -  YOUR CHOICE SECTION
+// **********************************************
+
+.your-choice-section {
+  width: 100%;
+  @include flexbox($wrap: wrap);
+  font-size: 2rem;
+  color: white;
+  margin: 75px auto;
+  background-image: url(../assets/patterns/pattern-1.svg),
+    url(../assets/patterns/pattern-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: -50vw, 70vw;
+  background-position-y: 0vh, 75vh;
+
+  &__title {
+    color: $title-color;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    font: {
+      size: 3rem;
+      weight: 700;
+      family: $primary-font-family;
+    }
+  }
+  &__description {
+    width: 80%;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 40px;
+    font: {
+      size: 1.5rem;
+      family: $second-font-family;
+      weight: 400;
+    }
+  }
+  .your-choice-articles-wrapper {
+    width: 80%;
+    @include flexbox($wrap: wrap);
+
+    .your-choice-article {
+      margin-bottom: 35px;
+      @include flexbox($justify: flex-end, $wrap: wrap);
+
+      &__title {
+        @extend .your-choice-section__title;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 10px;
+        width: 79%;
+        display: inline-block;
+      }
+      &__description {
+        @extend .your-choice-section__description;
+        text-align: left;
+        width: 79%;
+        margin-bottom: 0;
+        display: inline-block;
+      }
+      &:nth-child(1)::before {
+        content: url(../assets/icons/Ecstatic.svg);
+        margin-right: 20px;
+      }
+      &:nth-child(2)::before {
+        content: url(../assets/icons/Airpods.svg);
+        margin-right: 20px;
+      }
+      &:nth-child(3)::before {
+        content: url(../assets/icons/Possible.svg);
+        margin-right: 20px;
+        width: 26px;
+        height: 31px;
+      }
+      &:nth-child(4)::before {
+        content: url(../assets/icons/Open-game.svg);
+        margin-right: 20px;
+      }
+      &:nth-child(5)::before {
+        content: url(../assets/icons/Endeavor.svg);
+        margin-right: 20px;
+      }
+      &:nth-child(6)::before {
+        content: url(../assets/icons/Comfort.svg);
+        margin-right: 20px;
+      }
+    }
+  }
+}

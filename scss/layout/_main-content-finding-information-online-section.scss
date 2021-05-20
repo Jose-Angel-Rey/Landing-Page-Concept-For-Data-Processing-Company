@@ -1,0 +1,77 @@
+// ******************************************************
+//    MAIN CONTENT - FINDING INFORMATION SECTION
+// ******************************************************
+
+.finding-information-section {
+  width: 80%;
+  @include flexbox($wrap: wrap);
+  margin-bottom: 50px;
+
+  &-wrapper {
+    width: 100%;
+    @include flexbox($wrap: wrap);
+    margin: 50px auto;
+    background-image: url(../assets/patterns/pattern-7.svg);
+    background-repeat: no-repeat;
+    background-position: 40vw center;
+    background-size: contain;
+  }
+
+  &__title {
+    @extend .your-choice-section__title;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    span {
+      color: $title-span-color;
+    }
+  }
+  &__description {
+    @extend .your-choice-section__description;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+
+//  Articles
+.finding-information-articles-wrapper {
+  @include flexbox($wrap: wrap);
+  margin-top: 30px;
+  width: 80%;
+
+  .finding-information-article {
+    @include flexbox($justify: flex-start, $wrap: wrap);
+
+    &__title {
+      @extend .your-choice-section__title;
+      font-size: 1.6rem;
+      text-align: left;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    &__description {
+      @extend .your-choice-section__description;
+      text-align: left;
+      margin-bottom: 0;
+      width: 100%;
+    }
+    &:nth-child(1) {
+      margin-bottom: 30px;
+
+      &::before {
+        content: url(../assets/icons/Swiss-knife.svg);
+        margin-bottom: 10px;
+      }
+    }
+    &:nth-child(2)::before {
+      content: url(../assets/icons/Possible.svg);
+      margin-bottom: 10px;
+    }
+  }
+}

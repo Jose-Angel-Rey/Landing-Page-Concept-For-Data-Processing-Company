@@ -1,0 +1,51 @@
+// ******************************************************
+//    MAIN CONTENT - INVEST PROPERTY SECTION
+// ******************************************************
+
+.invest-property-section {
+  @include flexbox($wrap: wrap);
+  width: 80%;
+  margin-bottom: 50px;
+
+  &-wrapper {
+    @include flexbox($wrap: wrap);
+    width: 100%;
+    margin: 50px auto;
+    background-image: url(../assets/patterns/Mask-Group.svg);
+    background-repeat: no-repeat;
+    background-position: 40vw center;
+    background-size: contain;
+  }
+
+  &__title {
+    @extend .your-choice-section__title;
+    width: 100%;
+    margin-bottom: 35px;
+    span {
+      color: $title-span-color;
+    }
+  }
+  &__description {
+    @extend .your-choice-section__description;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  &__btn {
+    @include general-button;
+    box-shadow: -5px 5px 15px #f2984a80;
+    margin-top: 30px;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: darken($btn-bg-color, 20%);
+      cursor: pointer;
+    }
+    &:active {
+      background-color: lighten($btn-bg-color, 10%);
+    }
+  }
+  &__img {
+    width: 80%;
+  }
+}
