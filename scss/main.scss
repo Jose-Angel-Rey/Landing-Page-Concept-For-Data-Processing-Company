@@ -19,11 +19,13 @@
 @import "layout/sponsors-section";
 
 // ------------- Components ----------------
+
 // • Main header
+@import "components/hamburger-btn";
 @import "components/main-header-top-section";
 @import "components/main-header-nav";
+@import "components/main-header-content-cta";
 @import "components/main-header-illustration";
-@import "components/hamburger-btn";
 
 // • Main footer
 @import "components/main-footer-top-section";

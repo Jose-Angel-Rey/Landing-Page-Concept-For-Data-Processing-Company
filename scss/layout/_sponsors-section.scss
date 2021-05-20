@@ -1,27 +1,29 @@
-/* Sponsors section styles */
-.sponsor-wrapper {
-  width: 100%;
-  margin: 80px auto 40px auto;
+// ******************************
+//       SPONSORS LOGOS
+// ******************************
+
+.sponsor {
   @include flexbox($direction: column);
-  background-image: url(../assets/patterns/pattern-1.svg),
-    url(../assets/patterns/pattern-1.svg);
-  background-repeat: no-repeat;
-  background-position-x: -45vw, 70vw;
-  background-size: contain;
+  margin: 80px auto 40px auto;
+  width: 80%;
+  max-width: 670px;
 
-  .sponsor {
-    @include flexbox($direction: column);
+  @media screen and (min-width: 500px) {
+    background-position-x: -10vw, 60vw;
+  }
+
+  &-wrapper {
+    width: 100%;
     margin: 80px auto 40px auto;
-    width: 80%;
-    max-width: 670px;
-
-    @media screen and (min-width: 500px) {
-      background-position-x: -10vw, 60vw;
-    }
-
-    &__logo {
-      margin: 25px auto;
-      width: 130px;
-    }
+    @include flexbox($direction: column);
+    background-image: url(../assets/patterns/pattern-1.svg),
+      url(../assets/patterns/pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: -45vw, 70vw;
+    background-size: contain;
+  }
+  &__logo {
+    margin: 25px auto;
+    width: 130px;
   }
 }
