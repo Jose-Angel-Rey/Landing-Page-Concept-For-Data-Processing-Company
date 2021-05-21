@@ -1,11 +1,11 @@
 # Landing page concept for data processing company
 ---
 
-## **\* This landing page is for educational purposes only \*\***
+## ***\* This landing page is for educational purposes only \*\***
 
 ---
 
-## 🚀🚀 Project URL: https://jose-angel-rey-concept-for-data-processing-company.vercel.app/
+## 🚀🚀 Project URL: https://landing-page-concept-for-data-processing-company.vercel.app/
 
 ---
 
