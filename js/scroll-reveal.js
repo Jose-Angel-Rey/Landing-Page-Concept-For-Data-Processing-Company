@@ -1,14 +1,23 @@
+// *******************************
+//      ScrollReveal animations
+// *******************************
+
+// Main header
 ScrollReveal().reveal(".main-header", {
   duration: 3500,
   delay: 500,
   origin: "right"
 });
+
+// Sponsors
 ScrollReveal().reveal(".sponsor", {
   duration: 3000,
   delay: 500,
   origin: "bottom",
   distance: "10rem"
 });
+
+// Main content
 ScrollReveal().reveal(".your-choice-section", {
   duration: 3000,
   delay: 1500,
@@ -87,12 +96,16 @@ ScrollReveal().reveal(".finding-information-article", {
   origin: "bottom",
   distance: "5rem"
 });
-ScrollReveal().reveal(".cta-section-wrapper", {
+
+// Aside CTA section
+ScrollReveal().reveal(".aside-cta-section-wrapper", {
   duration: 3000,
   delay: 4000,
   origin: "bottom",
   distance: "15rem"
 });
+
+// Main footer
 ScrollReveal().reveal(".main-footer", {
   duration: 3000,
   delay: 4000,
