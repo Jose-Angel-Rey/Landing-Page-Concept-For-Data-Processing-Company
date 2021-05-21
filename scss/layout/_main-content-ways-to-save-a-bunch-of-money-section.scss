@@ -2,7 +2,7 @@
 //       MAIN CONTENT - WAYS TO SAVE MONEY SECTION
 // ******************************************************
 
-// Wrapper
+// Section - Wrapper
 .ways-to-save-money-wrapper {
   @include flexbox($wrap: wrap);
   width: 100%;
@@ -27,15 +27,9 @@
 
   @media screen and (min-width: 1100px) {
     max-width: 995px;
-
-    &__title {
-      max-width: 70%;
-    }
-    &__description {
-      width: 45%;
-    }
   }
 
+  // Section - title
   &__title {
     @extend .your-choice-section__title;
     width: 100%;
@@ -43,10 +37,20 @@
     span {
       color: $title-span-color;
     }
+
+    @media screen and (min-width: 1100px) {
+      max-width: 70%;
+    }
   }
+
+  // Section -  Description
   &__description {
     @extend .your-choice-section__description;
     width: 100%;
+
+    @media screen and (min-width: 1100px) {
+      width: 45%;
+    }
   }
 }
 
@@ -63,6 +67,7 @@
     width: 90%;
   }
 
+  // Article
   .ways-to-save-money-article {
     @include flexbox($justify: flex-end, $wrap: wrap);
     margin-bottom: 35px;
@@ -72,15 +77,12 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-
-      &__description {
-        font-size: 1.4rem;
-      }
     }
     @media screen and (min-width: 1100px) {
       max-width: 250px;
     }
 
+    // Article - Title
     &__title {
       @extend .your-choice-section__title;
       font-size: 2rem;
@@ -89,11 +91,17 @@
       width: 100%;
       display: inline-block;
     }
+    
+    // Article - Description
     &__description {
       @extend .your-choice-section__description;
       text-align: center;
       width: 100%;
       margin-bottom: 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
