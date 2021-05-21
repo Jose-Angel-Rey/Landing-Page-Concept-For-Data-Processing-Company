@@ -68,31 +68,31 @@ ScrollReveal().reveal(".create-your-next-project-section__illustration", {
 });
 ScrollReveal().reveal(".invest-property-section", {
   duration: 3000,
-  delay: 3000,
+  delay: 3500,
   origin: "left",
   distance: "10rem"
 });
 ScrollReveal().reveal(".invest-property-section__img", {
   duration: 3000,
-  delay: 3000,
+  delay: 3500,
   origin: "right",
   distance: "10rem"
 });
 ScrollReveal().reveal(".finding-information-section", {
   duration: 3000,
-  delay: 3000,
+  delay: 3500,
   origin: "right",
   distance: "10rem"
 });
 ScrollReveal().reveal(".finding-information-section__img", {
   duration: 3000,
-  delay: 3000,
+  delay: 3500,
   origin: "right",
   distance: "10rem"
 });
 ScrollReveal().reveal(".finding-information-article", {
   duration: 3000,
-  delay: 3000,
+  delay: 4000,
   origin: "bottom",
   distance: "5rem"
 });
