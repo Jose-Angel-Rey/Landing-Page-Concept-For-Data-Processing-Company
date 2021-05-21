@@ -13,6 +13,8 @@
 
 // --------------- Layout  -----------------
 @import "layout/main-header";
+@import "layout/main-header-top-section";
+@import "layout/main-header-content-cta";
 
 @import "layout/sponsors-section";
 
@@ -27,20 +29,16 @@
 @import "layout/cta-section";
 
 @import "layout/main-footer";
+@import "layout/main-footer-top-section";
 
 // ------------- Components ----------------
 // • Main header
 @import "components/hamburger-btn";
-@import "components/main-header-top-section";
 @import "components/main-header-nav";
-@import "components/main-header-content-cta";
 @import "components/main-header-illustration";
 
 // • Main footer
-@import "components/main-footer-top-section";
 @import "components/main-footer-nav";
 @import "components/main-footer-social-icons";
 @import "components/main-footer-copy";
 @import "components/attribution-footer";
-
-@import "media-queries/media-queries-1300px";
