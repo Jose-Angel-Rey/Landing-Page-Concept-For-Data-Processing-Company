@@ -6,12 +6,14 @@
   @include flexbox($wrap: wrap);
   width: 80%;
 
+  // Section - Wrapper
   &-wrapper {
     @include flexbox($wrap: wrap);
     width: 100%;
     margin: 50px auto;
   }
 
+  // Section - Title
   &__title {
     @extend .your-choice-section__title;
     width: 100%;
@@ -19,7 +21,13 @@
     span {
       color: $title-span-color;
     }
+
+    @media screen and (min-width: 1100px) {
+      font-size: 3.6rem;
+    }
   }
+
+  // Section - CTA Button
   &__cta-btn {
     @include general-button;
     box-shadow: -5px 5px 15px #f2984a49;
@@ -34,16 +42,13 @@
       background-color: lighten($btn-bg-color, 10%);
     }
   }
+
+  // Section - Illustration
   &__illustration {
     width: 120vw;
     transform: translateY(-30px);
-  }
 
-  @media screen and (min-width: 1100px) {
-    &__title {
-      font-size: 3.6rem;
-    }
-    &__illustration {
+    @media screen and (min-width: 1100px) {
       width: 100vw;
     }
   }
