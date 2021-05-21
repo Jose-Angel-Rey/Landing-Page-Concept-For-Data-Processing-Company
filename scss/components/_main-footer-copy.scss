@@ -1,16 +1,19 @@
 // ********************************************
 //          MAIN FOOTER - COPY SECTION
 // ********************************************
+
 .footer-copy-section {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   @include flexbox($justify: space-between);
 
+  // ---- Wrapper ----
   &-wrapper {
     width: 100%;
   }
 
+  // ---- Item ----
   &__item {
     width: 30%;
     color: $text-color-2;

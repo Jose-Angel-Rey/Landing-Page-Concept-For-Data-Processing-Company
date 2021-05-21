@@ -15,6 +15,7 @@
     max-width: 1000px;
   }
 
+  // ------  Wrapper ------
   &-wrapper {
     width: 100%;
     @include flexbox($wrap: wrap);
