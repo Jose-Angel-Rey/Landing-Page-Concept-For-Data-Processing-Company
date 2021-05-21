@@ -31,6 +31,16 @@
     }
   }
 
+  @media screen and (min-width: 1100px) {
+    max-width: 450px;
+    &__title {
+      font-size: 4rem;
+    }
+    &__description {
+      width: 85%;
+    }
+  }
+
   &-wrapper {
     width: 100%;
     @include flexbox($wrap: wrap);
@@ -38,6 +48,11 @@
     background-image: url(../assets/patterns/pattern-6.svg);
     background-repeat: no-repeat;
     background-position: -30vw center;
+
+    @media screen and (min-width: 1100px) {
+      margin: 100px auto;
+      background-position: left center;
+    }
   }
 
   &__title {

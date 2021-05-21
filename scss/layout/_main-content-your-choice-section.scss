@@ -24,6 +24,10 @@
     background-position-x: -20vw, 85vw;
     background-position-y: center;
   }
+  @media screen and (min-width: 1100px) {
+    margin: 100px auto;
+  }
+
   &__title {
     color: $title-color;
     width: 80%;
@@ -55,12 +59,19 @@
       justify-content: space-between;
     }
 
+    @media screen and (min-width: 1100px) {
+      max-width: 1000px;
+    }
+
     .your-choice-article {
       @include flexbox($justify: flex-end, $wrap: wrap);
       margin-bottom: 35px;
 
       @media screen and (min-width: 768px) {
         width: 45%;
+      }
+      @media screen and (min-width: 1100px) {
+        width: 30%;
       }
 
       &__title {

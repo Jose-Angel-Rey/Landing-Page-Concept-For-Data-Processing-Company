@@ -51,6 +51,10 @@
       family: $second-font-family;
       weight: 400;
     }
+
+    @media screen and (min-width: 1100px) {
+      max-width: 400px;
+    }
   }
 
   .input-wrapper {

@@ -19,6 +19,9 @@
     @media screen and (min-width: 768px) {
       background-position: 50vw center;
     }
+    @media screen and (min-width: 1100px) {
+      background-position: right center;
+    }
   }
 
   &__title {
@@ -54,6 +57,19 @@
       width: 40%;
       max-width: 400px;
       margin-right: auto;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    max-width: 450px;
+
+    &__title {
+      font-size: 4rem;
+    }
+    &__description {
+      margin-bottom: 0px;
+    }
+    &__img {
+      max-width: 450px;
     }
   }
   &__btn {

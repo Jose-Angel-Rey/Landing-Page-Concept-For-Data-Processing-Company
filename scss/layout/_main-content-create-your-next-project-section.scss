@@ -38,4 +38,13 @@
     width: 120vw;
     transform: translateY(-30px);
   }
+
+  @media screen and (min-width: 1100px) {
+    &__title {
+      font-size: 3.6rem;
+    }
+    &__illustration {
+      width: 100vw;
+    }
+  }
 }
