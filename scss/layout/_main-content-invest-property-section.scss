@@ -7,6 +7,18 @@
   width: 80%;
   margin-bottom: 50px;
 
+  @media screen and (min-width: 768px) {
+    width: 45%;
+    max-width: 385px;
+    margin: 0 25px 0 auto;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1100px) {
+    max-width: 450px;
+  }
+
+  // Section - Wrapper
   &-wrapper {
     @include flexbox($wrap: wrap);
     width: 100%;
@@ -24,6 +36,7 @@
     }
   }
 
+  // Section - Tile
   &__title {
     @extend .your-choice-section__title;
     width: 100%;
@@ -31,47 +44,36 @@
     span {
       color: $title-span-color;
     }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      width: 90%;
+    }
+
+    @media screen and (min-width: 1100px) {
+      font-size: 4rem;
+    }
   }
+
+  // Section - Description
   &__description {
     @extend .your-choice-section__description;
     text-align: center;
     width: 100%;
     margin-bottom: 0;
-  }
-  @media screen and (min-width: 768px) {
-    width: 45%;
-    max-width: 385px;
-    margin: 0 25px 0 auto;
-    justify-content: flex-start;
 
-    &__title {
-      text-align: left;
-      width: 90%;
-    }
-    &__description {
+    @media screen and (min-width: 768px) {
       text-align: left;
       margin-bottom: 30px;
       font-size: 1.4rem;
     }
-    &__img {
-      width: 40%;
-      max-width: 400px;
-      margin-right: auto;
-    }
-  }
-  @media screen and (min-width: 1100px) {
-    max-width: 450px;
 
-    &__title {
-      font-size: 4rem;
-    }
-    &__description {
+    @media screen and (min-width: 1100px) {
       margin-bottom: 0px;
     }
-    &__img {
-      max-width: 450px;
-    }
   }
+
+  // Section - Button
   &__btn {
     @include general-button;
     box-shadow: -5px 5px 15px #f2984a80;
@@ -86,7 +88,19 @@
       background-color: lighten($btn-bg-color, 10%);
     }
   }
+
+  // Section - Image
   &__img {
     width: 80%;
+
+    @media screen and (min-width: 768px) {
+      width: 40%;
+      max-width: 400px;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1100px) {
+      max-width: 450px;
+    }
   }
 }
