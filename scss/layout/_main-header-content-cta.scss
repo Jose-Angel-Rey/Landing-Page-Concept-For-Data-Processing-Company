@@ -2,7 +2,7 @@
 //       MAIN HEADER CONTENT - CTA
 // *************************************************
 
-.cta-section {
+.main-header-content .cta-section {
   @include flexbox($direction: column, $justify: space-evenly, $align: left);
   margin-top: 60px;
   height: 130px;

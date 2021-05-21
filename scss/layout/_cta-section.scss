@@ -2,7 +2,7 @@
 //        CTA SECTION
 // *******************************
 
-.cta-section {
+.aside-cta-section {
   width: 80%;
   @include flexbox($direction: column);
   background-color: $cta-bg-color;
@@ -14,6 +14,7 @@
     max-width: 900px;
   }
 
+  // --- Wrapper ----
   &-wrapper {
     width: 100%;
     @include flexbox($wrap: wrap);
@@ -29,6 +30,7 @@
     }
   }
 
+  //  ----  Title -------
   &__title {
     color: $title-span-color;
     width: 80%;
@@ -41,6 +43,7 @@
     }
   }
 
+  // ---- Description --------
   &__description {
     width: 80%;
     color: $text-color-2;
@@ -57,6 +60,7 @@
     }
   }
 
+  // ---- Input waraper ----
   .input-wrapper {
     width: 80%;
     @include flexbox($wrap: wrap);
@@ -66,6 +70,7 @@
     }
   }
 
+  // ---- Input ----
   &__input {
     width: 70%;
     padding: 15px 0px 15px 15px;
@@ -80,6 +85,7 @@
     }
   }
 
+  // ---- Input submit ----
   &__input-submit {
     @include general-button($width: 30%, $pdy: 17px);
     border-radius: 0px 5px 5px 0px;
@@ -93,6 +99,7 @@
     }
   }
 
+  // ---- Advice ----
   &__advice {
     width: 100%;
     text-align: center;

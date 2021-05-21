@@ -2,7 +2,7 @@
 //       MAIN HEADER - TOP SECTION
 // ****************************************
 
-.top-section {
+.main-header .top-section {
   @include flexbox($justify: space-between);
   margin-bottom: 50px;
   width: 80%;
