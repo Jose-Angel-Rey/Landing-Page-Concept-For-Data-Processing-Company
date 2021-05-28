@@ -9,7 +9,7 @@
 
 ---
 
-### 🖋 Original design by: [NextDesign](https://dribbble.com/Getnextdesign)
+### 🖋 Designed by: [NextDesign](https://dribbble.com/Getnextdesign)
 
 ### 👨🏼‍💻 Developed by: [Jose Angel Rey](https://github.com/Jose-Angel-Rey)
 
