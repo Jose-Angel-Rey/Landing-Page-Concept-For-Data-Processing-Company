@@ -100,7 +100,7 @@ ScrollReveal().reveal(".finding-information-article", {
 // Aside CTA section
 ScrollReveal().reveal(".aside-cta-section-wrapper", {
   duration: 3000,
-  delay: 1000,
+  delay: 1500,
   origin: "bottom",
   distance: "15rem"
 });
@@ -108,13 +108,13 @@ ScrollReveal().reveal(".aside-cta-section-wrapper", {
 // Main footer
 ScrollReveal().reveal(".main-footer", {
   duration: 3000,
-  delay: 1000,
+  delay: 2000,
   origin: "left",
   distance: "10rem"
 });
 ScrollReveal().reveal(".attribution", {
   duration: 3000,
-  delay: 1500,
+  delay: 2500,
   origin: "right",
   distance: "10rem"
 });
